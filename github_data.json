@@ -1,0 +1,7 @@
+{
+  "name": "Jane H. Doe",
+  "email": "jane@example.com",
+  "bio": "Full-stack engineer building cool things.",
+  "html_url": "https://github.com/janedoe",
+  "languages": ["Python", "JavaScript", "TypeScript"]
+}

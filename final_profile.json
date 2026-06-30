@@ -1,0 +1,12 @@
+{
+  "full_name": "Jane Doe",
+  "primary_email": "jane@example.com",
+  "phone": "+5551234567",
+  "skills": [
+    "python",
+    "javascript",
+    "typescript"
+  ],
+  "github_url": "https://github.com/janedoe",
+  "overall_confidence": 0.8
+}
