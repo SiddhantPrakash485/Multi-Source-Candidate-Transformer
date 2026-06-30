@@ -1,6 +1,6 @@
 # Multi-Source Candidate Data Transformer
 
-This repository contains my submission for the Eightfold Engineering Intern (Jul-Dec 2026) assignment. It is a deterministic, rule-based pipeline that ingests candidate data from varied structured and unstructured sources, resolves conflicts, and outputs a canonical JSON profile based on a dynamic runtime configuration.
+This repository contains my submission for the Eightfold Engineering Intern (Jul-Dec 2026) assignment. It is a deterministic, rule-based pipeline that ingests candidate data from varied structured and unstructured sources, resolves conflicts, and outputs a canonical JSON profile based on a dynamic runtime configuration. Video Link: https://drive.google.com/file/d/1JGrRJILV2EuwRU1DQPMUJMTeHIhCPvFx/view?usp=drive_link
 
 ## Features
 * **Modular Extractors:** Handles structured ATS JSON and unstructured GitHub API JSON.
