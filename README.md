@@ -1,6 +1,10 @@
 # Multi-Source Candidate Data Transformer
 
-This repository contains my submission for the Eightfold Engineering Intern (Jul-Dec 2026) assignment. It is a deterministic, rule-based pipeline that ingests candidate data from varied structured and unstructured sources, resolves conflicts, and outputs a canonical JSON profile based on a dynamic runtime configuration. Video Link: https://drive.google.com/file/d/1JGrRJILV2EuwRU1DQPMUJMTeHIhCPvFx/view?usp=drive_link
+**🎥 Demo Video:** [Watch the end-to-end pipeline and architecture explanation here](https://drive.google.com/file/d/1JGrRJILV2EuwRU1DQPMUJMTeHIhCPvFx/view?usp=drive_link)
+
+---
+
+This repository contains my submission for the Eightfold Engineering Intern (Jul-Dec 2026) assignment. It is a deterministic, rule-based pipeline that ingests candidate data from varied structured and unstructured sources, resolves conflicts, and outputs a canonical JSON profile based on a dynamic runtime configuration.
 
 ## Features
 * **Modular Extractors:** Handles structured ATS JSON and unstructured GitHub API JSON.
@@ -20,7 +24,7 @@ To run the pipeline and print the output to your terminal:
 python cli.py --config config.json --ats ats_data.json --github github_data.json
 
 To run the pipeline and save the resulting canonical profile to a file:
-
+```bash
 python cli.py --config config.json --ats ats_data.json --github github_data.json --out final_profile.json
 
 
@@ -30,5 +34,3 @@ API over NLP: For the unstructured data source requirement, I opted to parse the
 Email as Primary Key: The merging engine assumes that the primary email is the definitive unique identifier for a candidate across multiple systems.
 
 Graceful Degradation: If an input file contains malformed JSON, the extractor catches the JSONDecodeError, skips the file, and proceeds with the remaining valid sources rather than crashing the run.
-
-
